@@ -1,0 +1,281 @@
+:root {
+    --fundo-escuro: #0a0e1a;
+    --fundo-medio: #141824;
+    --fundo-card: #151a28;
+    --texto-claro: #ffffff;
+    --cor-de-destaque: #025eff;
+    --cor-de-perigo: #ef4444;
+    --cor-borda: #606265;
+    --cor-texto-suave: #b0b5bd;
+    --cor-botao-acao: #0ea5e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-claro);
+    font-family: "Inter Tight", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 18px 40px;
+    background-color: var(--fundo-medio);
+    border-bottom: 1px solid var(--cor-borda);
+
+}
+
+header img {
+    width: 45px;
+}
+
+header input {
+    border: 1px solid var(--cor-borda);
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 9px;
+    color: var(--texto-claro);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    flex: 1;
+    gap: 25px;
+
+}
+
+.boas-vindas p {
+    color: var(--cor-texto-suave);
+    padding-top: 5px;
+}
+
+.cards-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.cards-stats h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cards-stats p {
+    color: var(--cor-texto-suave);
+    font-size: 13px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-card);
+    border-radius: 15px;
+    padding: 15px;
+    gap: 5px;
+}
+
+.card p {
+    margin-top: -8px;
+
+}
+
+.cards-stats .card {
+    flex: 1 1 0;
+}
+
+.emoji-card {
+    font-size: 32px;
+}
+
+.card-atividades ul {
+    list-style: disc;
+    margin-top: 10px;
+}
+
+.campo-buscar input {
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 8px 80px;
+    background-color: transparent;
+    color: var(--texto-claro);
+    width: 100%;
+    padding-left: 33px;
+}
+
+.campo-buscar {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.icone-lupa {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--cor-borda);
+    width: 18px;
+    height: 18px;
+}
+
+aside {
+    background-color: var(--fundo-medio);
+    width: 300px;
+    padding: 15px 7px;
+    border-right: 1px solid var(--cor-borda);
+    min-height: 85vh;
+
+}
+
+footer {
+    background-color: var(--fundo-medio);
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--cor-borda);
+    border-top: 1px solid var(--cor-borda);
+
+}
+
+.container {
+    display: flex;
+}
+
+nav h2 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+ul {
+    flex-direction: column;
+    gap: 1px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.btn-turmas {
+    margin-bottom: 20px;
+}
+.btn-turma{
+    margin-bottom: 10px;
+}
+
+.btn-sair {
+    color: var(--cor-de-perigo);
+}
+
+.li-turmas {
+    border-bottom: 1px solid var(--cor-borda);
+    margin-bottom: 25px;
+    padding: 5px;
+    padding-bottom: 12px;
+    width: 253px;
+}
+
+.li-turmas ul {
+    background-color: var(--fundo-card);
+}
+
+.btn-lista-turmas {
+    width: 218px;
+}
+
+.submenu {
+    display: none;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.submenu.ativo {
+    display: block;
+}
+
+
+.rotulos {
+    color: var(--cor-texto-suave);
+    font-size: 12px;
+    display: block;
+    margin-bottom: 8px;
+}
+.disciplinas{
+    margin-bottom: 6px;
+}
+
+nav button {
+    padding: 6px 8px;
+    border-radius: 9px;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: var(--texto-claro);
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+nav svg {
+    width: 15px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+button:focus {
+    outline: 2px solid var(--cor-de-destaque)
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.aceso {
+    box-shadow: 0 0 4px var(--cor-de-destaque);
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+}
+
+.grupo-botoes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-lancar {
+    background-color: var(--cor-botao-acao);
+    color: var(--fundo-escuro);
+
+}
+
+.btn-ver {
+    background-color: transparent;
+    border: 1px solid var(--cor-borda);
+    color: var(--texto-claro);
+
+}
+
+.seta {
+    margin-left: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

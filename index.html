@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilet-Sistema-Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight..." rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="logo.png" alt="logo-facilet">
+            <h1>Facilet</h1>
+
+        </div>
+        <div>
+            <h2>Lançamento de Notas</h2>
+        </div>
+        <div class="campo-buscar">
+            <i data-lucide="search" class="icone-lupa"></i>
+            <input type="search" placeholder="Buscar aluno..." id="busca-aluno">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <nav>
+                <h2><i data-lucide="menu"></i>Navegação</h2>
+                <ul>
+                    <li class="li-turmas"><button class="btn-turmas alternar-submenu"><i
+                                data-lucide="school"></i>Turmas<i class="seta" data-lucide="chevron-right"></i></button>
+                        <ul class="submenu">
+                            <li class="lista-turmas"><button class="btn-lista-turmas alternar-submenu">Lista de Turmas<i
+                                        class="seta" data-lucide="chevron-right"></i></button>
+                                <ul class="submenu">
+                                    <li><button class="btn-6ano alternar-submenu">6ºAno</button>
+                                        <ul class="submenu">
+                                            <li> <span class="rotulos">TURMAS</span></li>
+                                            <li>
+                                                <button class="btn-turma btn-turma-a alternar-submenu">A</button>
+                                                <ul class="submenu">
+                                                    <li><span class="rotulos">DISCIPLINAS</span></li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>Português<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>Matemática<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>Ciências<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>História<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>Geografia<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>Inglês<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>Artes<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>ED.Física<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                                    <li class="disciplinas">
+                                                        <button class="btn-disciplinas"><i
+                                                                data-lucide="book-open"></i>EN.Religioso<i class="seta"
+                                                                data-lucide="chevron-right"></i></button>
+                                                    </li>
+                                            </li>
+                                        </ul>
+                                    <li>
+                                        <button class="btn-turma btn-turma-b alternar-submenu">B</button>
+                                        <ul class="submenu">
+                                            <li class="disciplinas">
+                                                <button class="btn-disciplinas"><i
+                                                        data-lucide="book-open"></i>Português<i class="seta"
+                                                        data-lucide="chevron-right"></i></button>
+                                            </li>
+                                            <li class="disciplinas">
+                                                <button class="btn-disciplinas"><i
+                                                        data-lucide="book-open"></i>Matemática<i class="seta"
+                                                        data-lucide="chevron-right"></i></button>
+                                            </li>
+                                            <li class="disciplinas">
+                                                <button class="btn-disciplinas"><i data-lucide="book-open"></i>Ciências<i class="seta" data-lucide="chevron-right"></i></button>        
+                                            </li>
+                                            <li class="disciplinas">
+                                                <button class="btn-disciplinas"><i data-lucide="book-open"></i>História<i class="seta" data-lucide="chevron-right"></i></button>
+                                            </li>
+                                            <li class="disciplinas">
+                                                <button class="btn-disciplinas"><i data-lucide="book-open"></i>Geografia<i class="seta" data-lucide="chevron-right"></i></button>
+                                            </li>
+                                            
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                    </li>
+
+                </ul>
+                </li>
+
+                </ul>
+                </li>
+
+                </ul>
+                </li>
+
+                <li><button><i data-lucide="bar-chart-3"></i>Relatórios<i class="seta"
+                            data-lucide="chevron-right"></i></button></li>
+                <li><button><i data-lucide="sun"></i>Tema: Claro<i class="seta"
+                            data-lucide="chevron-right"></i></button></li>
+                <li><button><i data-lucide="user"></i>Perfil<i class="seta" data-lucide="chevron-right"></i></button>
+                </li>
+                <li><button><i class="btn-sair" data-lucide="log-out"></i>Sair<i class="seta"
+                            data-lucide="chevron-right"></i></button></li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main>
+            <section class="boas-vindas">
+                <h2>Bem-vindo, Professor Marcelino! 👋</h2>
+                <p>Selecione uma turma e disciplina no menu lateral para lançar notas.</p>
+            </section>
+            <section class="cards-stats">
+                <div class="card card-alunos">
+                    <span class="emoji-card">👥</span>
+                    <h3>156</h3>
+                    <p>ALUNOS</p>
+                </div>
+                <div class="card card-turmas">
+                    <span class="emoji-card">📚</span>
+                    <h3>10</h3>
+                    <p>TURMAS</p>
+                </div>
+                <div class="card card-aprovacao">
+                    <span class="emoji-card">✅</span>
+                    <h3>92%</h3>
+                    <p>APROVAÇÃO</p>
+                </div>
+            </section>
+            <section>
+                <div class="card card-atividades">
+
+                    <h3>📅Próximas Atividades</h3>
+                    <ul>
+                        <li><strong>15/05</strong> — Entrega de notas do 2ºBim</li>
+                        <li><strong>20/05</strong> — Reunião de pais</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="card card-acesso-rapido">
+
+                    <h3>⚡Acesso Rápido</h3>
+                    <div class="grupo-botoes">
+                        <button class="btn btn-lancar">Lançar Notas</button>
+                        <button class="btn btn-ver">Ver Relatórios</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+    <footer>
+        Facilet © 2026 — Todos os direitos reservados — Desenvolvido por Marcelino Lopes
+    </footer>
+</body>
+
+</html>
