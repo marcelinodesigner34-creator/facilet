@@ -165,7 +165,8 @@ ul {
 .btn-turmas {
     margin-bottom: 20px;
 }
-.btn-turma{
+
+.btn-turma {
     margin-bottom: 10px;
 }
 
@@ -189,6 +190,14 @@ ul {
     width: 218px;
 }
 
+.btn-ano {
+    margin-bottom: 7px;
+}
+
+.btn-relatorio {
+    margin-bottom: 7px;
+}
+
 .submenu {
     display: none;
     margin-top: 15px;
@@ -206,7 +215,8 @@ ul {
     display: block;
     margin-bottom: 8px;
 }
-.disciplinas{
+
+.disciplinas {
     margin-bottom: 6px;
 }
 
